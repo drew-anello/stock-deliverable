@@ -1,6 +1,20 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import Stocks from "../stock-data";
 const Dashboard = (props) => {
-    return 
+    return (
+        <div className="dashboard">
+            {Stocks.map((stock) => {
+            const {name, symbol} = stock;
+            return(
+                
+                <Link to ={`/stocks/${symbol}`}>
+                    <h1>{name}{symbol}</h1>
+                </Link>
+            ) 
+})}
+      </div>
+    )
 }
 
 

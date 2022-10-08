@@ -4,9 +4,10 @@ import "./App.css";
 import { Route, Switch } from "react-router-dom";
 import Home from "./components/Home";
 import About from "./components/About";
-import Stocks from "./stock-data";
+import Stock from "./components/Stock";
 import Nav from "./components/Nav";
 import Dashboard from "./pages/Dashboard";
+import stocks from "./stock-data";
 
 function App() {
   // We will use the Route component to specify each route
@@ -20,16 +21,13 @@ function App() {
         <Route path="/about">
           <About />
         </Route>
-        <Route path="/stocks">
+        <Route path="/stock">
           <Dashboard />
         </Route>
-        <Route path="/stocks/:symbols">
-          <Stocks />
+        <Route path="/stocks/:symbol"
+        render={(routerProps) => <Stock stocks={stocks} {...routerProps} />}>
+          <Stock />
         </Route>
-        <Route
-  path="/stocks/:symbol"
-  render={(routerProps) => <Stocks {...routerProps} />}
-/>
       </Switch>
     </div>
   );
