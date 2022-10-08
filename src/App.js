@@ -7,7 +7,7 @@ import About from "./components/About";
 import Stock from "./components/Stock";
 import Nav from "./components/Nav";
 import Dashboard from "./pages/Dashboard";
-import stocks from "./stock-data";
+import stocks from "./components/stock-data";
 
 function App() {
   // We will use the Route component to specify each route
