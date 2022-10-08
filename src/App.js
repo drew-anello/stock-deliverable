@@ -2,8 +2,8 @@ import React from "react";
 import "./App.css";
 //Import route and our components
 import { Route, Switch } from "react-router-dom";
-import Home from "./pages/Home";
-import About from "./pages/About";
+import Home from "./components/Home";
+import About from "./components/About";
 import Stocks from "./pages/Stocks";
 import Nav from "./components/Nav";
 import Dashboard from "./pages/Dashboard";
