@@ -4,7 +4,7 @@ import "./App.css";
 import { Route, Switch } from "react-router-dom";
 import Home from "./components/Home";
 import About from "./components/About";
-import Stocks from "./pages/Stocks";
+import Stocks from "./stock-data";
 import Nav from "./components/Nav";
 import Dashboard from "./pages/Dashboard";
 
