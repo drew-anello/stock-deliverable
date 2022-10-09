@@ -11,9 +11,6 @@ const Nav = (props) => {
         <div>About</div>
       </Link>
       <Link to="/stock/symbol">
-        <div>Stocks</div>
-      </Link>
-      <Link to="/stocks">
         <div>Dashboard</div>
       </Link>
     </div>

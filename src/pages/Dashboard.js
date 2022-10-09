@@ -7,12 +7,14 @@ const Dashboard = (props) => {
             {Stocks.map((stock, idx) => {
             const {name, symbol} = stock;
             return(
+            
                 
-                <Link to ={`/stocks/${symbol}`}>
-                    <h1>{name}{symbol}</h1>
+                <Link to ={`/stock/:${symbol}`}>
+                    <h1>{name}({symbol})</h1>
                 </Link>
             ) 
 })}
+
       </div>
     )
 }
